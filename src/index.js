@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -22,6 +22,12 @@ ReactDOM.render(
     <div>
       <Router history={history}>
         <Route path="/" component={App}>
+          <IndexRoute component={App} />
+          {/* <Route path="surf-scoter" component={}/> */}
+          {/* <Route path="bradley" component={}/> */}
+          {/* <Route path="maps" component={}/> */}
+          {/* <Route path="activities" component={}/> */}
+          {/* <Route path="faq" component={}/> */}
         </Route>
       </Router>
       <DevTools />
