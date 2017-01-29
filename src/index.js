@@ -6,23 +6,22 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-import injectAppGlobalStyles from './css/global';
 
 import configureStore from './config/configureStore';
 import DevTools from './config/DevTools';
 
 import App from './components/App';
+import Home from './components/Home';
 
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
-injectAppGlobalStyles();
 
 ReactDOM.render(
   <Provider store={store}>
     <div>
       <Router history={history}>
         <Route path="/" component={App}>
-          <IndexRoute component={App} />
+          <IndexRoute component={Home} />
           {/* <Route path="surf-scoter" component={}/> */}
           {/* <Route path="bradley" component={}/> */}
           {/* <Route path="maps" component={}/> */}
