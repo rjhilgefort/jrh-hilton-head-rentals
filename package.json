@@ -16,11 +16,12 @@
     "css-loader": "0.26.0",
     "detect-port": "1.0.1",
     "dotenv": "2.0.0",
-    "eslint": "3.8.1",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb-base": "^11.0.1",
     "eslint-config-react-app": "^0.5.0",
     "eslint-loader": "1.6.0",
     "eslint-plugin-flowtype": "2.21.0",
-    "eslint-plugin-import": "2.0.1",
+    "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "2.2.3",
     "eslint-plugin-react": "6.4.1",
     "extract-text-webpack-plugin": "1.0.1",
@@ -38,6 +39,9 @@
     "promise": "7.1.1",
     "react-dev-utils": "^0.4.2",
     "recursive-readdir": "2.1.0",
+    "redux-devtools": "^3.3.2",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.2.0",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
@@ -47,8 +51,21 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.4",
+    "ramda": "^0.23.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.7",
+    "redux": "^3.6.0",
+    "redux-actions": "^1.2.1",
+    "redux-logger": "^2.7.4",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^1.4.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -85,6 +102,9 @@
     ]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "airbnb-base"
+    ]
   }
 }
