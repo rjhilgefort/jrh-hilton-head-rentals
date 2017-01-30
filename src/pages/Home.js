@@ -5,7 +5,7 @@ const Home = () => (
   <div>
     <Jumbotron>
       <Grid>
-        <h1>Welcome to React</h1>
+        <h1>Welcome to HHI Vacation Rentals</h1>
         <p>
           <Button
             bsStyle="success"
