@@ -25,9 +25,12 @@ const App = ({ children }) => (
             <NavLink to="/bradley">Bradley</NavLink>
           </Nav>
           <Nav pullRight>
+            <NavLink to="/contact">Contact</NavLink>
+            {/*
             <NavLink to="/maps">Maps</NavLink>
             <NavLink to="/activities">Activities</NavLink>
             <NavLink to="/faq">FAQ</NavLink>
+            */}
           </Nav>
         </Navbar.Collapse>
       </Grid>

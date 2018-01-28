@@ -1,4 +1,4 @@
-import R from 'ramda';
+import { pipe } from 'ramda';
 
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
@@ -12,7 +12,7 @@ const loggerMiddleware = createLogger();
 
 const configureStore = () => createStore(
   reducer,
-  R.pipe(
+  pipe(
     DevTools.instrument(),
     applyMiddleware(
       thunkMiddleware,
