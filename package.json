@@ -2,6 +2,29 @@
   "name": "jrh-hilton-head-rentals",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.4",
+    "ramda": "^0.23.0",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "react-router-bootstrap": "^0.23.1",
+    "react-router-redux": "^4.0.7",
+    "redux": "^3.6.0",
+    "redux-actions": "^1.2.1",
+    "redux-logger": "^2.7.4",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^1.4.2"
+  },
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",
@@ -50,29 +73,6 @@
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "1.0.0"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "lodash": "^4.17.4",
-    "ramda": "^0.23.0",
-    "react": "^15.4.2",
-    "react-bootstrap": "^0.30.7",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.2",
-    "react-router": "^3.0.2",
-    "react-router-bootstrap": "^0.23.1",
-    "react-router-redux": "^4.0.7",
-    "redux": "^3.6.0",
-    "redux-actions": "^1.2.1",
-    "redux-logger": "^2.7.4",
-    "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.2.0",
-    "styled-components": "^1.4.2"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
