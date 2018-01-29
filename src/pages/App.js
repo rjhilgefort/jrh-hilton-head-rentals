@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Grid, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router';
-
 import NavLink from './../components/NavLink';
 
+const { Header, Brand, Toggle, Collapse } = Navbar;
 const Container = styled.div`
   padding-top: 50px;
 `;
@@ -13,26 +13,26 @@ const App = ({ children }) => (
   <Container>
     <Navbar fixedTop>
       <Grid>
-        <Navbar.Header>
-          <Navbar.Brand>
+        <Header>
+          <Brand>
             <Link to="/">HHI Vacation Rentals</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
+          </Brand>
+          <Toggle />
+        </Header>
+        <Collapse>
           <Nav>
             <NavLink to="/surf-scoter">Surf Scoter</NavLink>
             <NavLink to="/bradley">Bradley</NavLink>
           </Nav>
           <Nav pullRight>
-            <NavLink to="/contact">Contact</NavLink>
             {/*
             <NavLink to="/maps">Maps</NavLink>
             <NavLink to="/activities">Activities</NavLink>
             <NavLink to="/faq">FAQ</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
             */}
           </Nav>
-        </Navbar.Collapse>
+        </Collapse>
       </Grid>
     </Navbar>
     {children}
