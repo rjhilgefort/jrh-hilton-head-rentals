@@ -1,14 +1,14 @@
 import React from 'react';
 import { Grid, Row } from 'react-bootstrap';
 
-const Bradley = () => (
+const Contact = () => (
   <div>
     <Grid>
       <Row>
-        <h1>Bradley</h1>
+        <h1>Contact</h1>
       </Row>
     </Grid>
   </div>
 );
 
-export default Bradley;
+export default Contact;
