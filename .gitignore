@@ -9,6 +9,8 @@ coverage
 # production
 build
 live
+live-1
+live-2
 
 # misc
 .DS_Store
