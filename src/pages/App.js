@@ -6,7 +6,7 @@ import NavLink from './../components/NavLink';
 
 const { Header, Brand, Toggle, Collapse } = Navbar;
 const Container = styled.div`
-  padding-top: 50px;
+  padding-top: 55px;
 `;
 
 const App = ({ children }) => (
