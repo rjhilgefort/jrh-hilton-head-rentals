@@ -18,7 +18,7 @@ const Welcome = () => (
 // TODO: Make the phones and emails things they can click and do something with
 const Contact = () => (
   <ul>
-    <li>hhivacationrental@gmail.com</li>
+    <li>hhivacationrental1@gmail.com</li>
     <li>Jim Hilgefort</li>
     <ul>
       <li>1-859-640-3637</li>

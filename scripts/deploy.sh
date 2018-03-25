@@ -1,17 +1,4 @@
-echo "Building and deploying ..."
-
-# build first so if something is wrong, we don't replace things
-npm run build
-
-# So we can run when nothing exists
-mkdir live
-mkdir live-1
-mkdir live-2
-
-# Replace with new versions and drop last
-rm -rf live-2
-mv live-1 live-2
-mv live live-1
+yarn run build
+rm -rf live
 mv build live
-
-echo "... deployed successfully, oldest version dropped."
+rsync -av -P -e "ssh -p 4444" live rjhilgefort@192.241.245.99:/home/rjhilgefort/www/hhi.hilgefort.me/
