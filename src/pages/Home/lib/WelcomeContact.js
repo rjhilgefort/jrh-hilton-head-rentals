@@ -10,7 +10,7 @@ const Welcome = () => (
     <h3>Welcome!</h3>
     <p>
       Below you can find links to our Hilton Head Island vacation
-      rental properties. If you have any questions, please get in touch with us!
+      rental properties. If you have any questions, please get in touch!
     </p>
   </div>
 );
